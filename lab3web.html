@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family : "poppins";
+            background-color: #ccd;
+        }
+
+        .listbox {
+            font-family : "poppins";
+            border: 1px solid #161563;
+            border-radius : 5px;
+            padding: 2px 0px;
+        }
+
+        .title {
+            margin-top : -20px;
+            font-size : 15px;
+        }
+
+        .combobox {
+            font-family : "poppins";
+            border: 1px solid #161563;
+            border-radius : 5px;
+            padding:2px 10px;
+        }
+
+        form fieldset {
+            border: 1px solid #161563;
+            border-radius : 5px;
+        }
+
+        form input[type="submit"] {
+        border: 1px solid #161563;
+        border-radius : 5px;
+        font-family : "poppins";
+        padding: 2px 15px;
+        }
+        </style>
+</head>
+<body>
+    <h2>Membuat Form Dropdown dan Listbox</h2>
+    <p class="title">Dengan Multiple Selection</p>
+
+    <form action="http://google.com/">
+        <fieldset>
+            <legend>Prosesor Komputer</legend>
+            <p>ListBox</p>
+            <select class="listbox" name="Processor" size="5" multiple="multiple">
+                <option value="Ryzen 3 3200G">Ryzen 3 3200G</option>
+                <option value="Intel i3 10100F">Intel i3 10100F</option>
+                <option value="Ryzen 5 4600">Ryzen 5 3600</option>
+                <option value="Ryzen 5 4600">Ryzen 5 3500</option>
+                <option value="Ryzen 5 4600">Ryzen 5 4600</option>
+                <option value="Intel i5 10600">Ryzen 3 3200G</option>
+                <option value="Ryzen 7 4800">Intel i3 10100F</option>
+                <option value="Intel i7 10750H">Ryzen 5 4600</option>
+            </select>
+            <p></p>
+            <label for="Processors">Dropdown : </label>
+            <select name="Processors" class="combobox" >
+                <option value="" selected="selected">---Pilih Prosesor---</option>
+                <option value="Ryzen 3 3200G">Ryzen 3 3200G</option>
+                <option value="Intel i3 10100F">Intel i3 10100F</option>
+                <option value="Ryzen 5 4600">Ryzen 5 3600</option>
+                <option value="Ryzen 5 4600">Ryzen 5 3500</option>
+                <option value="Ryzen 5 4600">Ryzen 5 4600</option>
+                <option value="Intel i5 10600">Ryzen 3 3200G</option>
+                <option value="Ryzen 7 4800">Intel i3 10100F</option>
+                <option value="Intel i7 10750H">Ryzen 5 4600</option>
+            </select>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
